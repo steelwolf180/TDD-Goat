@@ -141,7 +141,7 @@ class NewVisitorTest(LiveServerTestCase):
         # is less interesting than Edith
         inputbox = self.browser.find_element_by_id('id_new_item')
         inputbox.send_keys('Buy milk')
-        inputbox.send_keys(Keys.Enter)
+        inputbox.send_keys(Keys.ENTER)
         self.wait_for_row_in_list_table('1: Buy milk')
 
         # Francis gets his own unique URL
